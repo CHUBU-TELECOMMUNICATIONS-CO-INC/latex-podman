@@ -12,6 +12,13 @@ MINETA Hiroki
 
 MIT
 
+## Usage
+```bash
+git clone https://github.com/CHUBU-TELECOMMUNICATIONS-CO-INC/latex-podman.git
+cd latex-podman
+podman build -t latex .
+```
+
 ## About Libraries of Special Note
 
 * minted
@@ -22,6 +29,9 @@ MIT
 
 * latexindent
   * latexソースコード用のformatterです。ソースコードのインデントを自動で揃えるようにしました。perlに依存するためdocker imageにから削除していません。
+
+* svg
+  * SVG形式画像を埋め込むために導入しました。
 
 ## Embedding font
 
