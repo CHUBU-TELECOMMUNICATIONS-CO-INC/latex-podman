@@ -1,21 +1,8 @@
-# Docker image for LaTeX
+# Podman image for LaTeX
 
 ## Usage
 
-カレントディレクトリにビルドしたいtexソースがあるとします．
-
-```bash
-docker run -u $(id -u):$(id -g) --rm -v $PWD:/workdir ghcr.io/being24/latex-docker latexmk main.tex
-```
-
 これでカレントディレクトリに `main.pdf` ができます．
-
-## Version
-
-| Image tag | Ubuntu | TeXLive | Arch         | Registry            |
-| --------- | ------ | ------- | -----------  | ------------------  |
-| 3.0.3     | 20.04  | 2022    | amd64, arm64 | ghcr.io             |
-| 3.1.0     | 20.04  | 2022    | amd64, arm64 | docker.io, ghcr.io  |
 
 ## Author
 
@@ -24,12 +11,6 @@ being24
 ## License
 
 MIT
-
-## Pull Image
-
-```bash
-docker pull ghcr.io/being24/latex-docker:latest
-```
 
 ## About Libraries of Special Note
 
