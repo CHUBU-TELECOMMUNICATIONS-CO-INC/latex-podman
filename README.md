@@ -6,7 +6,7 @@
 
 ## Author
 
-being24
+MINETA Hiroki
 
 ## License
 
