@@ -16,8 +16,14 @@ MIT
 ```bash
 git clone https://github.com/CHUBU-TELECOMMUNICATIONS-CO-INC/latex-podman.git
 cd latex-podman
+
+## Proxyが無い場合
 podman build -t latex .
+
+## 社内でProxyを利用する場合はbuild-argで環境変数を渡す
+podman build --build-arg https_prorxy="${HTTPS_PROXY}" --build-arg http_proxy="${HTTP_PROXY}" -t latex .
 ```
+
 
 ## About Libraries of Special Note
 
